@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BEB6C158182E624600EA5331 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BEB6C157182E624600EA5331 /* main.c */; };
 		BEB6C15A182E624600EA5331 /* xxtea.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEB6C159182E624600EA5331 /* xxtea.1 */; };
+		BEB6C165182E639400EA5331 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = BEB6C160182E639400EA5331 /* common.c */; };
+		BEB6C166182E639400EA5331 /* xxtea.c in Sources */ = {isa = PBXBuildFile; fileRef = BEB6C163182E639400EA5331 /* xxtea.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,11 @@
 		BEB6C154182E624600EA5331 /* xxtea */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xxtea; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB6C157182E624600EA5331 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BEB6C159182E624600EA5331 /* xxtea.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = xxtea.1; sourceTree = "<group>"; };
+		BEB6C160182E639400EA5331 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		BEB6C161182E639400EA5331 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		BEB6C162182E639400EA5331 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		BEB6C163182E639400EA5331 /* xxtea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxtea.c; sourceTree = "<group>"; };
+		BEB6C164182E639400EA5331 /* xxtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxtea.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,11 @@
 		BEB6C156182E624600EA5331 /* xxtea */ = {
 			isa = PBXGroup;
 			children = (
+				BEB6C160182E639400EA5331 /* common.c */,
+				BEB6C161182E639400EA5331 /* common.h */,
+				BEB6C162182E639400EA5331 /* main.h */,
+				BEB6C163182E639400EA5331 /* xxtea.c */,
+				BEB6C164182E639400EA5331 /* xxtea.h */,
 				BEB6C157182E624600EA5331 /* main.c */,
 				BEB6C159182E624600EA5331 /* xxtea.1 */,
 			);
@@ -117,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB6C166182E639400EA5331 /* xxtea.c in Sources */,
+				BEB6C165182E639400EA5331 /* common.c in Sources */,
 				BEB6C158182E624600EA5331 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
