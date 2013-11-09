@@ -17,13 +17,12 @@ int main(int argc, const char * argv[])
     unsigned char *meta_string = (unsigned char *)"深圳市创梦科技有限公司";
     unsigned char *meta_key = (unsigned char *)"http://www.idreamsky.com";
         
-    data_len = (xxtea_long)strlen(meta_string);
+    data_len = (xxtea_long)strlen((const char *)meta_string);
     
     result = encrypt(meta_string, data_len, meta_key, &ret_length);
     
-    result_len = (xxtea_long)(sizeof(result));
+    result_len = (xxtea_long)(strlen((const char *)result));
     retval = decrypt(result, result_len, meta_key, &ret_length);
-    printf("%s", retval);
+    printf("%s\n", retval);
     printf("Finish\n");
 }
-
